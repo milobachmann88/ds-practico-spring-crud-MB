@@ -2,7 +2,6 @@ package etec.crud.controller
 
 import com.ninjasquad.springmockk.MockkBean
 import etec.crud.model.Instrumento
-import etec.crud.service.InstrumentoServicio
 import io.mockk.*
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest
@@ -14,7 +13,7 @@ import org.springframework.test.web.servlet.post
 import org.springframework.test.web.servlet.put
 import kotlin.test.Test
 
-@WebMvcTest(InstrumentoControlador::class)
+@WebMvcTest(InstrumentoServicio::class)
 class InstrumentoControladorTests {
     @Autowired
     lateinit var api: MockMvc
